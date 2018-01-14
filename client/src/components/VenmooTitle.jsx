@@ -11,10 +11,9 @@ export default class VenmooTitle extends React.Component {
     return (
     <div className="navbar">
         <h1 className="title">
-          Welcome to VenMOO: MOOOOOve your MOOney
+          Venmoo
         </h1>
     </div>
     );
   }
 }
-
