@@ -41,6 +41,24 @@ class ProfilePage extends React.Component {
           <div className="balance">
             <h3>{`${user.balance}`}</h3>
           </div>
+          <div>
+            <div >
+              <Button
+                className="toggleFormButton"
+                color="primary"
+                onClick={this.toggle}>
+                <img height="40px" width="40px" src="./moneysign.svg" />
+              </Button>
+            </div>
+            <div>
+              <Button
+                className="dropdown"
+                color="primary"
+                onClick={this.dropdown}>
+                <img height="40px" width="40px" src="https://images.vexels.com/media/users/3/136206/isolated/preview/5f90ffe408b2e0f7eaa65ad491dc7fa9-hourglass-dollar-icon-by-vexels.png" />
+              </Button>
+            </div>
+          </div>
         </div>
         <div>
           <Collapse isOpen={this.state.dropdownOpen}>
