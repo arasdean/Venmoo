@@ -177,6 +177,7 @@ body.thin::-webkit-scrollbar {
 }
 
 .scrollingTransactions {
+    margin-top: 20px; 
     width: 600px;
     height: 390px;
     overflow: scroll;
