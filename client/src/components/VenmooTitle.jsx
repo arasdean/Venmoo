@@ -11,6 +11,5 @@ export default class VenmooTitle extends React.Component {
     <div className="navbar">
       <img src="./venmoLogo.svg"/>
     </div>
-);
-
-export default VenmooTitle;
+  )}
+}
