@@ -60,9 +60,9 @@ class Login extends React.Component {
               <input type="password" onChange={this.handlePasswordChange.bind(this)} name="password" />
             </div>
             <div>
-              
-                <input className="loginButton" type="submit" onClick={this.handleSubmit.bind(this)} value="Log In" />
-              
+
+                <input className="loginButton" className="btn" type="submit" onClick={this.handleSubmit.bind(this)} value="Log In" />
+
               <br />
               <br />
               <br />
@@ -70,7 +70,7 @@ class Login extends React.Component {
               <br />
               <br />
               <Link to="/signup">
-                <input className="loginButton" type="submit" value="No Account? Sign Up Here" />
+                <input className="loginButton" className="greenbtn"  type="submit" value="No Account? Sign Up Here" />
               </Link>
             </div>
           </form>

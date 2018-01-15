@@ -10,9 +10,7 @@ export default class VenmooTitle extends React.Component {
   render() {
     return (
     <div className="navbar">
-        <h1 className="title">
-          Venmoo
-        </h1>
+      <img src="./venmoLogo.svg"/> 
     </div>
     );
   }

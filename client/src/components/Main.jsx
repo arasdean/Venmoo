@@ -3,7 +3,7 @@ import { Link, Route, Switch, BrowserRouter, Redirect } from 'react-router-dom';
 import ProfilePage from './ProfilePage.jsx';
 import Login from './Login.jsx';
 import SignUp from './SignUp.jsx';
-
+import VenmooTitle from './VenmooTitle.jsx';
 
 class Main extends React.Component {
   constructor(props) {
