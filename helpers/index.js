@@ -63,7 +63,11 @@ const generatePaymentOrRequest = function (req, res) {
     .then((data) => {
       const { id } = data.rows[0];
       db.createTransaction(senderObj.id, id, amount, isPayment)
-        .then(db.updateBalances)
+        .then(() => {
+          if (isPayment) {
+            db.updateBalances();
+          }
+        })
         .then(() => {
           res.statusCode = 201;
           res.end();
