@@ -50,7 +50,28 @@ app.post('/payment', (req, res) => {
 });
 
 app.post('/request', (req, res) => {
+<<<<<<< HEAD
   generatePaymentOrRequest(req, res);
+=======
+  const {
+    senderObj,
+    username,
+    amount,
+    isPayment,
+  } = req.body;
+  db.getUserByName(username)
+    .then((data) => {
+      const { id } = data.rows[0];
+      db.createTransaction(id, senderObj.id amount, isPayment)
+        .then(db.updateBalances)
+        .then(() => {
+          res.statusCode = 201;
+          res.end();
+        })
+        .catch((error) => { throw error; });
+    })
+    .catch((error) => { throw error; });
+>>>>>>> Fixed on server side request bug
 });
 
 const reactRoute = (req, res) => res.sendFile(path.resolve(__dirname, '../client/dist/index.html'));
