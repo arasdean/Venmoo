@@ -84,7 +84,7 @@ class Login extends React.Component {
               />
               {insertBreaks(6)}
               <Link to="/signup">
-                <input className="loginButton" type="submit" value="No Account? Sign Up Here" />
+                <input className="loginButton" className="greenbtn"  type="submit" value="No Account? Sign Up Here" />
               </Link>
             </div>
           </form>
