@@ -61,22 +61,22 @@ class Login extends React.Component {
             <div>
               {insertBreaks(3)}
               <label>Username:</label>
-              <input 
-                type="text" 
-                onChange={this.handleUsernameChange} 
-                name="username" 
+              <input
+                type="text"
+                onChange={this.handleUsernameChange}
+                name="username"
               />
             </div>
             <div>
               <label>Password:</label>
-              <input 
-                type="password" 
-                onChange={this.handlePasswordChange} 
-                name="password" 
+              <input
+                type="password"
+                onChange={this.handlePasswordChange}
+                name="password"
               />
             </div>
-            <div>     
-              <input 
+            <div>
+              <input
                 className="loginButton"
                 type="submit"
                 onClick={this.handleSubmit}
